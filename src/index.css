@@ -1,0 +1,64 @@
+/* Bootstrap icons */
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* Reset Css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+body {
+  font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  color: #222;
+  background-color: #fff;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}

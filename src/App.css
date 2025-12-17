@@ -1,0 +1,6 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  background-color: #0f1115;
+  min-height: 100vh;
+}

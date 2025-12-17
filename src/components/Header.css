@@ -1,0 +1,20 @@
+.todo-heading {
+  text-align: center;
+}
+.todo-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #e6e8eb;
+}
+.current-todo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.current-todo span,
+em {
+  color: #e6e8eb;
+}
+.current-todo em {
+  margin: 0 10px;
+}

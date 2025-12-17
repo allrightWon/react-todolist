@@ -1,0 +1,131 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.todo-search {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #3b82f6;
+  background: transparent;
+  border-radius: 8px;
+  outline: none;
+  color: #e6e8eb;
+  opacity: 0.7;
+}
+.todo-search::placeholder {
+  transition: 0.5s;
+}
+.todo-search:focus::placeholder {
+  opacity: 0;
+}
+.todo-control-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+.todo-control-box > div {
+  display: flex;
+  align-items: center;
+}
+.todo-control-box button {
+  color: #666;
+}
+.todo-control-box button.active {
+  color: #e6e8eb;
+  font-weight: bold;
+}
+.todo-control-box span {
+  color: #aaa;
+  font-size: 0.7rem;
+}
+.todo-empty {
+  color: #e6e8eb;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 120px;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+/* TodoItem CSS */
+.todo-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  opacity: 0.5s;
+  padding: 10px 8px;
+  border-radius: 8px;
+  color: #e6e8eb;
+}
+.todo-item:hover {
+  background: #1a1e25;
+}
+.todo-date-box {
+  margin-right: 15px;
+}
+.todo-date {
+  font-size: 0.75rem;
+  color: #999;
+}
+.todo-content-box {
+  flex: 1;
+  padding: 10px 0;
+}
+.todo-content {
+  position: relative;
+  width: fit-content;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+.todo-content::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #999;
+  transition: 0.5s;
+}
+.todo-action-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.todo-done-chk {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #e6e8eb;
+}
+.todo-delete-btn {
+  font-size: 1.1rem;
+}
+.todo-delete-btn .bi {
+  color: #e6e8eb;
+}
+.dnd-handle {
+  cursor: pointer;
+  margin-left: 10px;
+  opacity: 0.4;
+}
+.todo-item:hover .dnd-handle {
+  opacity: 1;
+}
+/* TodoItem - Done */
+.todo-item.done {
+  opacity: 0.5;
+}
+.todo-item.done .todo-content {
+  color: #999;
+}
+.todo-item.done .todo-content::before {
+  width: 100%;
+}
